@@ -104,17 +104,6 @@ public class ZBase32 extends BaseNCodec {
     /**
      * Creates a Base32 codec used for decoding and encoding.
      * <p>
-     * When encoding the line length is 0 (no chunking).
-     * </p>
-     * @param pad byte used as padding byte.
-     */
-    public ZBase32(final byte pad) {
-        this(0, null, pad);
-    }
-
-    /**
-     * Creates a Base32 codec used for decoding and encoding.
-     * <p>
      * When encoding the line length is given in the constructor, the line separator is CRLF.
      * </p>
      *
